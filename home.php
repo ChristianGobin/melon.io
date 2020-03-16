@@ -18,12 +18,6 @@
 
   <body>
       <?php
-        $age = 18;
-        if ($age < 18) {
-            echo "You may not proceed";
-        } else {
-            echo "You are atleast 18, continue";
-        }
         ?>
       <div class="container">
           <!--Responsive Navbar-->
