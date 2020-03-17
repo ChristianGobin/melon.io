@@ -117,7 +117,7 @@
               <!--main content with sidebar-->
               <div class="d-flex flex-column flex-md-row align-items-center justify-content-around">
                   <div class="card p-2" style="width: 18rem;">
-                      <img class="card-img-top" src="./images/demi-deherrera-L-sm1B4L1Ns-unsplash.jpg" alt="Card image cap">
+                      <img class="card-img-top" src=".\images\philip-junior-mail-BpUkWK6hfJA-unsplash.jpg" alt="Card image cap">
                       <div class="card-body">
                           <h5 class="card-title">Why Altitude Isn't Everything</h5>
                           <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -125,7 +125,7 @@
                       </div>
                   </div>
                   <div class="card p-2" style="width: 18rem;">
-                      <img class="card-img-top" src="./images/adam-wilson-6ZZh8kOyW-4-unsplash.jpg" alt="Card image cap">
+                      <img class="card-img-top" src=".\images\peter-hammer-ggQy5lGtwb0-unsplash.jpg" alt="Card image cap">
                       <div class="card-body">
                           <h5 class="card-title">South American Earners</h5>
                           <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -133,7 +133,7 @@
                       </div>
                   </div>
                   <div class="card p-2" style="width: 18rem;">
-                      <img class="card-img-top" src="./images/yanapi-senaud-6HR8vpjYUHo-unsplash.jpg" alt="Card image cap">
+                      <img class="card-img-top" src=".\images\henry-be-JR8XZ-gdZrA-unsplash.jpg" alt="Card image cap">
                       <div class="card-body">
                           <h5 class="card-title">Bitter Blends</h5>
                           <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -141,14 +141,30 @@
                       </div>
                   </div>
               </div>
-              <div class="jumbotron jumbotron-fluid needs">
-                  <div class="container">
-                      <h1 class="display-4">Your Growing Needs</h1>
-                      <p class="lead">This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>
+              <!-- Footer -->
+              <footer class="page-footer font-small blue pt-4">
+                  <!-- Footer Links -->
+                  <div class="container-fluid text-center text-md-left">
+                      <!-- Grid row -->
+                      <div class="row">
+                          <hr class="clearfix w-100 d-md-none pb-3">
+                          <!-- Grid column -->
+                          <div class="col-md-3 mb-md-0 mb-3">
+                              <!-- Links -->
+                              <h5 class="text-uppercase">Links</h5>
+                              <ul class="list-unstyled">
+                                  <li>
+                                      <a href="./contact.php">Contact Us</a>
+                                  </li>
+                                  <li>
+                                      <a href="github.com/christiangobin">My Github</a>
+                                  </li>
+                              </ul>
+                          </div>
+                      </div>
                   </div>
-              </div>
+              </footer>
           </div>
-
           <!-- Optional JavaScript -->
           <!-- jQuery first, then Popper.js, then Bootstrap JS -->
           <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
