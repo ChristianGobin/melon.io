@@ -1,6 +1,7 @@
 <?php
 //server side validation
 $error = '';
+$successMsg = '';
 if ($_POST) {
     if (!$_POST["email"]) {
         $error .= 'Email not submitted by user. <br>';
@@ -25,7 +26,12 @@ if ($_POST) {
         $subject = $_POST["subject"];
         $from = $_POST["email"];
         $message = $_POST["message"];
-        $successMsg = "<div class='alert alert-success' role='alert'> Sent! </div>";
+        $headers = "FROM: " . $from;
+        if (mail($emailTo, $subject, $message, $headers)) {
+            $successMsg = "<div class='alert alert-success' role='alert'> Email Sent, Thanks! </div>";
+        } else {
+            echo "<div class='alert alert-danger role='alert'> Error, could not be sent at this time. </div>";
+        }
     }
 }
 ?>
@@ -39,7 +45,12 @@ if ($_POST) {
 <body>
     <div class="container">
         <h5 class="display-4">Contact</h5>
-        <div id="error"><? echo $error ?></div>
+        <div id="error">
+            <?
+            //cant display both messages at once
+            echo $error . $successMsg;
+            ?>
+        </div>
         <form id='contact-form' method="post">
             <div class="form-group">
                 <label for="email">Email address</label>
@@ -56,13 +67,6 @@ if ($_POST) {
             </div>
             <button type="submit" id="submit" class="btn btn-primary">Submit</button>
         </form>
-        <ul>
-            <?php
-            foreach ($_POST as $item) {
-                echo "<li>" . $item . "</li>";
-            }
-            ?>
-        </ul>
     </div>
 
     <!--JQuery, Bootstrap4 Js -->
